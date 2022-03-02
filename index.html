@@ -13,31 +13,37 @@
     <header>
       <h1 class="nombre-sitio">Tienda <span>Muebles</span> </h1>
     </header>
-    <nav cless="navegacion">
+    <nav class="nav-principal">
       <a href="index.html" class="enlace">Inicio</a>
+      <a href="nosotros.html" class="enlace">Nosotros</a>
       <a href="tienda.html" class="enlace">Tienda</a>
       <a href="blog.html" class="enlace">Blog</a>
       <a href="galeria.html" class="enlace">Galeria</a>
       <a href="contacto" class="enlace">Contacto</a>
     </nav>
-    <section>
-        <img src="/Imagenes/principal.jpg" alt="">
+    <section >
+        <div class="hero">
+
+        </div>
     </section>
 
-    <section>
-      <h2>Categorias de Productos</h2>
-      <div>
-        <img src="Imagenes/categoria1.jpg" alt="categoria 1" />
-        <a href="">Oficina</a>
+    <section class="contenedor categorias">
+      <h2>Categorias de <span>Productos</span> </h2>
+      <div class="listado-categoria">
+        <div class="categoria">
+          <img src="Imagenes/categoria1.jpg" alt="categoria 1" />
+          <a href="">Oficina</a>
+        </div>
+        <div class="categoria">
+          <img src="Imagenes/categoria2.jpg" alt="categoria 2" />
+          <a href="">Hogar</a>
+        </div>
+        <div class="categoria">
+          <img src="Imagenes/categoria3.jpg" alt="categoria 3" />
+          <a href="">Cocina </a>
+        </div>
       </div>
-      <div>
-        <img src="Imagenes/categoria2.jpg" alt="categoria 2" />
-        <a href="">Hogar</a>
-      </div>
-      <div>
-        <img src="Imagenes/categoria3.jpg" alt="categoria 3" />
-        <a href="">Cocina </a>
-      </div>
+   
     </section>
 
     <section class="sobre-nosotros">
@@ -51,18 +57,7 @@
         </p>
       </div>
     </section> <!-- Fin Section -->
-    <section class="sobre-ellos">
-      <div>
-        <h2>Sobre Nosotros</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-          architecto illo vero, quas voluptates, est reiciendis laborum impedit
-          quis tempora porro necessitatibus similique facere! Voluptatem aliquid
-          in quis corporis laborum.
-        </p>
-      </div>
-    </section> <!-- Fin Section -->
-
+  
     <main>
       <h2>Nuestros Productos</h2>
       <div>
@@ -126,41 +121,43 @@
               </div>
           </div> <!-- Fin Producto -->
 
-      </div> <!-- Fin Main -->
-    </main>
+      </div> 
+    </main><!-- Fin Main -->
 
     <footer>
+<div>
+  <div class="footer--categoria">
+    <h3>Categoria</h3>
+    <nav>
+        <a href="">Cocina</a>
+        <a href="">Oficina</a>
+        <a href="">Jardin</a>
+        <a href="">Cochera</a>
+        <a href="">Dormitorios</a>
+    </nav>
+</div>
 
-        <div>
-            <h3>Categoria</h3>
-            <nav>
-                <a href="">Cocina</a>
-                <a href="">Oficina</a>
-                <a href="">Jardin</a>
-                <a href="">Cochera</a>
-                <a href="">Dormitorios</a>
-            </nav>
-        </div>
+<div class="footer--nosotros">
+    <h3>Sobre Nosotros</h3>
+    <nav>
+        <a href="">Nuestra Historia</a>
+        <a href="">Mision. Vision y Valores</a>
+        <a href="">Carreras</a>
+        <a href="">Politica de Privacidad</a>
+        <a href="">Terminos del servicio</a>
+    </nav>
+</div>
 
-        <div>
-            <h3>Sobre Nosotros</h3>
-            <nav>
-                <a href="">Nuestra Historia</a>
-                <a href="">Mision. Vision y Valores</a>
-                <a href="">Carreras</a>
-                <a href="">Politica de Privacidad</a>
-                <a href="">Terminos del servicio</a>
-            </nav>
-        </div>
-
-        <div>
-            <h3>Soporte</h3>
-            <nav>
-                <a href="">Preguntas Frecuentes</a>
-                <a href="">Ayuda en Linea</a>
-                <a href="">Confianza y Seguridad</a>
-            </nav>
-        </div>
+<div class="footer--soporte">
+    <h3>Soporte</h3>
+    <nav>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Ayuda en Linea</a>
+        <a href="">Confianza y Seguridad</a>
+    </nav>
+</div>
+</div>
+        
 
       <p>Todos los derechos reservados. Javier Lopez-2022</p>
     </footer>
