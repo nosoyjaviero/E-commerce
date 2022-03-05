@@ -23,12 +23,35 @@ html {
   h1{
       font-size: 5rem;
 }
-h2,h3{
+h2{
+    font-size: 4rem;
+}
+h3{
     font-size: 3rem;
 }
+
 h1,h2,h3{
     font-family: 'Playfair Display', serif;
     margin: 0 0 5rem 0;
+}
+
+/*Utilizades */
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    display: block;    
+    border:none;
+    text-transform: uppercase;   
+    color: white;
+    margin:  1rem;
+    padding: 1rem 0rem;
+    background-color: #8cbc00;
+    font-weight: bold;
+}
+.btn:hover{
+
 }
  
 /*Generales */
@@ -41,9 +64,9 @@ h1,h2,h3{
 
 .nombre-sitio{
     margin-top: 50px;
-    margin-bottom: 50px;
-   text-align: center ;
+    margin-bottom: 50px; 
 }
+
 .nombre-sitio span{
     color: #037bc0;
 }
@@ -84,24 +107,15 @@ align-items: center;
 background-position: center center;
  height: 25rem;
 }
-
-/* */
-
 /*categoria */
-.categorias h2{
-  text-align: center;  
-}
-
-
 
 .categoria a{
    
 display: block;
 text-align: center;
 padding: 1rem;
-
-font-size: 20px;
 }
+
 .categoria a:hover{
     background-color: #037bc0;
     border-bottom-left-radius: 10px;
@@ -113,6 +127,7 @@ font-size: 20px;
     width: 100%;
     gap: 2rem;
 }
+
 .listado-categoria img{    
     width: 100%;
 }
@@ -120,9 +135,7 @@ font-size: 20px;
 @media (min-width: 768px){
     .listado-categoria{
         display: flex;
-        justify-content: center;
-       
-        
+        justify-content: center; 
     }
     .listado-categoria a {
        text-justify : center;
@@ -147,7 +160,7 @@ background-color: #037bc0;
 color: whitesmoke;
 
 }
-.nosotros-parrafo h2{text-align: center;}
+
 .nosotros-parrafo p{text-align: justify;}
 
 @media (min-width: 768px){
@@ -160,16 +173,9 @@ color: whitesmoke;
    }
 }
 
-
-
 /* MAIN PRODUCTOS*/
 main{
     margin-top: 100px;
-}
-
-main h2 {
-    text-align: center;    
-    line-height: 1;
 }
 
 .producto{
@@ -189,22 +195,6 @@ text-align: center;
     font-size: 2.8rem;
     font-weight: 900;
 }
-
-
-.producto a{
-    display: block;
-    text-align: center;
-    border:none;
-    text-transform: uppercase;
-    font-weight: 900;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    margin:  1rem;
-    padding: 1rem 0rem;
-    background-color: #8cbc00;
-
-}
 .producto h3{
     font-size: 2rem;
 }
@@ -212,7 +202,6 @@ text-align: center;
     display: block;
 width: 100%;
 }
-
 
 @media (min-width: 768px){
     .productos{
@@ -247,11 +236,7 @@ width: 100%;
     .producto6{
         grid-column: 5/7;
     }
-
-
 }
-
-
 
 /* FOOTER*/
 
@@ -265,12 +250,10 @@ width: 100%;
 .footer--categoria nav, .footer--nosotros nav,
    .footer--soporte nav
    {
-       display: grid;
-      
+       display: grid;      
    }
    .footer a{
-    margin: 5px;
-    font-size: 1.6rem;
+    margin: 5px;   
    }
   
 
@@ -278,8 +261,7 @@ width: 100%;
    .footer
    {
        grid-template-columns: 1fr 1fr 1fr;
-   }
-  
+   }  
 }
 footer p{
     text-align: center;
@@ -287,23 +269,11 @@ footer p{
 
 
 /*Page NOSOTROS */
-.nosotros h2{
-    text-align: center;
-    font-size: 3.2rem;
-    font-family: 'Playfair Display', serif;
+.nosotros h2{   
     margin: 0 0 2rem 0;
     font-weight: bold;
 }
-.nosotros-page p{
-font-size: 1rem;
-font-family: 'Raleway', sans-serif;
-font-size: 1,6rem;
-line-height: 2;
-}
 
-.nosotros-page{
-    
-}
 .nosotros-page-parrafo{
 padding: 3rem 1rem;
 }
@@ -315,43 +285,29 @@ padding: 3rem 1rem;
         margin: 2rem;
         gap: 2rem;
     }
-    .nosotros-page-fondo{
-        
+    .nosotros-page-fondo{        
         grid-column: 1/3;
     }
     .nosotros-page-parrafo{
         grid-column: 3/5;
-    }
-   
+    }   
 }
-
-/*FIN */
 
 /*BLOG */
-.blog h2{
-    margin-top: 5rem;
-    text-align: center;
-    font-size: 2rem;
+.blog{
+    margin-top: 5rem;     
 }
-
 
 /* blog Principal */
 .entradas{
    display: flex;
    flex-direction: column;
 }
-
 .entradas span{
     color: #037bc0;
 }
-
-
 .article-principal h3{
     padding-left: 2rem;
-}
-
-.article-principal h3, .article h3, .aside h3{
-    text-align: center;
 }
 .article-principal{
     grid-row: 1/2;
@@ -364,10 +320,7 @@ padding: 3rem 1rem;
 }
 .boton-leer a{
     display: block;
-    background-color: #8cbc00;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    
+    background-color: #8cbc00;        
     color: white;
     text-transform: uppercase;
     font-weight: 800;
@@ -394,29 +347,20 @@ padding: 3rem 1rem;
     .article-principal{
     grid-column: 1/3;
     border-bottom: 2px solid #e1e1e1;
-    padding-bottom: 2rem;
-    
-    
+    padding-bottom: 2rem;        
     }
-
     .article{
         grid-column: 1/3;
         grid-row: 2/3;
     }
-    .aside{
-      
-    }
-        
     
     .texto-informacion{
         display: flex;
         flex-direction: row;
         font-size: 1rem;   
-        justify-content:  space-between;
-        
+        justify-content:  space-between;        
     }
 }
-
 
 /*Galeria */
 .imagenes{
@@ -437,17 +381,11 @@ object-fit: cover;
        grid-template-columns: 1fr 1fr 1fr;
    }
 }
-
-
 /*Contacto */
 
-.contacto h2{
-    text-align: center;
-}
 legend{
 margin: 2rem;
     border: 1px solid black;
 }
 
-/*FIN */
 
