@@ -104,11 +104,17 @@ align-items: center;
 /*Imagen principal */
 
 .hero {
- background-image: url(/Imagenes/principal.jpg);
- background-repeat: no-repeat;
- background-size: cover;
-background-position: center center;
- height: 25rem;
+ background-image: url(/Imagenes/principal.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 25rem;
+}
+
+@media (min-width: 768px) { 
+    .hero {
+        height: 55rem;
+    }
 }
 /*categoria */
 
