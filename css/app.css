@@ -41,7 +41,7 @@ h1,h2,h3{
     text-align: center;
 }
 .btn {
-    display: block;    
+    
     border:none;
     text-transform: uppercase;   
     color: white;
@@ -51,6 +51,7 @@ h1,h2,h3{
     font-weight: bold;
     transition: background-color .3s ease;
     border: none;
+    width: auto;
 }
 .btn:hover{
     background-color: #769c02;
@@ -187,18 +188,26 @@ text-align: center;
 .texto-producto p{
     margin: 0 0 0.5rem 0;
     line-height: 1.15;
+    padding: 2rem;
+    
 }
  .precio{
+  padding-top: 2rem;
     font-size: 2.8rem;
     font-weight: 900;
 }
 .producto h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .producto img{
     display: block;
 width: 100%;
 }
+.producto a{
+    display: block;
+margin-top: 2rem;
+} 
+
 
 @media (min-width: 768px){
     .productos{
@@ -290,6 +299,7 @@ padding: 3rem 1rem;
 /*BLOG */
 .blog{
     margin-top: 5rem;     
+
 }
 
 /* blog Principal */
@@ -312,19 +322,16 @@ padding: 3rem 1rem;
 .aside{
     order: 3;
 }
-.boton-leer a{
-    display: block;
-    background-color: #8cbc00;        
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
+.blog .btn{
+margin-left: 0;
 }
+
+
 @media (min-width: 768px){
-    .boton-leer a{
-        padding: 10px 8rem;
-        display: inline;
-        width: auto;
+    .blog .btn{
+        padding: 1rem 8rem;
     }
+   
     .entradas{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
