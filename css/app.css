@@ -20,11 +20,12 @@ html {
       background-repeat: no-repeat;
       display: block;
   }
-  h1{
+
+h1{
       font-size: 5rem;
 }
 h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h3{
     font-size: 3rem;
@@ -39,8 +40,7 @@ h1,h2,h3{
 .text-center{
     text-align: center;
 }
-
-.btn{
+.btn {
     display: block;    
     border:none;
     text-transform: uppercase;   
@@ -49,11 +49,15 @@ h1,h2,h3{
     padding: 1rem 0rem;
     background-color: #8cbc00;
     font-weight: bold;
+    transition: background-color .3s ease;
+    border: none;
 }
 .btn:hover{
-
+    background-color: #769c02;
+    cursor: pointer;
 }
- 
+
+
 /*Generales */
   .contenedor{
     max-width: 120rem;
@@ -65,6 +69,7 @@ h1,h2,h3{
 .nombre-sitio{
     margin-top: 50px;
     margin-bottom: 50px; 
+    font-size: 5rem;
 }
 
 .nombre-sitio span{
@@ -78,8 +83,6 @@ h1,h2,h3{
 padding: 50px 10px 30px 20px;
 border-top: 1px solid #e1e1e1;
 padding: 20px 0px 20px 0;
-
-
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -87,7 +90,6 @@ align-items: center;
 .nav-principal a{
     padding: 5px 0px 5px 0px;
 }
-
 @media (min-width: 768px ){
    .nav-principal{
     padding-left:20px ;
@@ -109,8 +111,7 @@ background-position: center center;
 }
 /*categoria */
 
-.categoria a{
-   
+.categoria a{   
 display: block;
 text-align: center;
 padding: 1rem;
@@ -152,13 +153,11 @@ padding: 1rem;
    height: 40rem;
    display: grid;
    grid-template-rows: 1fr 1fr;
-
 }
 .nosotros-parrafo{
 grid-row: 2/2;
 background-color: #037bc0;
 color: whitesmoke;
-
 }
 
 .nosotros-parrafo p{text-align: justify;}
@@ -177,9 +176,7 @@ color: whitesmoke;
 main{
     margin-top: 100px;
 }
-
-.producto{
-   
+.producto{   
 background-color: #037bc0;
 margin-top: 2rem;
 padding-bottom: 1rem;
@@ -246,7 +243,6 @@ width: 100%;
     display: grid;
     text-align: center;
 }
-
 .footer--categoria nav, .footer--nosotros nav,
    .footer--soporte nav
    {
@@ -254,9 +250,7 @@ width: 100%;
    }
    .footer a{
     margin: 5px;   
-   }
-  
-
+   } 
 @media (min-width: 480px ){
    .footer
    {
@@ -325,25 +319,21 @@ padding: 3rem 1rem;
     text-transform: uppercase;
     font-weight: 800;
 }
-
 @media (min-width: 768px){
     .boton-leer a{
         padding: 10px 8rem;
         display: inline;
         width: auto;
     }
-
     .entradas{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         margin: 1rem;
     }
-
     .aside{
         grid-column: 3/4;
-    }
-    
+    }    
     .article-principal{
     grid-column: 1/3;
     border-bottom: 2px solid #e1e1e1;
@@ -352,8 +342,7 @@ padding: 3rem 1rem;
     .article{
         grid-column: 1/3;
         grid-row: 2/3;
-    }
-    
+    }    
     .texto-informacion{
         display: flex;
         flex-direction: row;
@@ -366,8 +355,7 @@ padding: 3rem 1rem;
 .imagenes{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    
+    gap: 1rem;    
 }
 .imagenes img{
 height: 40rem;
@@ -381,11 +369,63 @@ object-fit: cover;
        grid-template-columns: 1fr 1fr 1fr;
    }
 }
-/*Contacto */
 
-legend{
-margin: 2rem;
-    border: 1px solid black;
+/*Contacto */
+.formulario legend{
+
+    background-color: #005485;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto
+}
+.formulario fieldset{
+    border:2px solid black;
+    margin-bottom: 2rem;
+
+}
+.submit {
+    display: block; 
+    background-color: #8cbc00;
+    padding: 1rem 3rem;
+}
+.campo {
+    margin-bottom: 2rem;   
+    display: flex;
+}
+.campo label{
+    flex-basis: 10rem ;    
+}
+.campo 
+input:not([type="radio"]),
+textarea,select
+{
+    flex: 1;     
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+::placeholder{
+    color: #b9b7b7;
+}
+
+.submit {
+    display:inline;
+    width:  100%;
+    margin-left: 0;
+}
+
+@media (min-width: 468px){
+    .submit { 
+        width: 50%;
+       display: inline-block;      
+       padding: 1rem 3rem;
+   }
 }
 
 
